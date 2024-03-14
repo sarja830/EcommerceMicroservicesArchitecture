@@ -34,19 +34,20 @@ public class BlogContentRequest {
     private boolean draft;
 }
 
-@Data
-// for builder method
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-class Content {
-    private long time;
-    @JsonRawValue
-    private String blocks;
-    private String version;
+// @Data
+// // for builder method
+// @Builder
+// @NoArgsConstructor
+// @AllArgsConstructor
+// public
+// class Content {
+//     private long time;
+//     @JsonRawValue
+//     private String blocks;
+//     private String version;
 
-    @JsonProperty("explanation")
-    private void unpackBlocks(JsonNode blocks) {
-        this.blocks = blocks.toString();
-    }
-}
+//     @JsonProperty("explanation")
+//     private void unpackBlocks(JsonNode blocks) {
+//         this.blocks = blocks.toString();
+//     }
+// }
